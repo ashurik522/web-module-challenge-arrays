@@ -47,10 +47,9 @@ Use the copy function below to do the following:
 
 
 function copy(newArr){
-  newArr = originalFlavors
   return newArr
 }
-//console.log(copy())
+console.log(copy(originalFlavors))
 
 
 
@@ -70,7 +69,7 @@ function is31Flavors(count){
   if (count === 31);
   return true;
  }
- //console.log(is31Flavors())
+ console.log(is31Flavors())
 
 
 
@@ -88,13 +87,11 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(arr, str){
-  // arr = originalFlavors;
-  // str = 'Rainbow Sherbert';
-  // arr.unshift(str);
-  // return arr;
+  arr.unshift(str);
+  return arr;
  };
 
-//console.log(addFlavor())
+console.log(addFlavor(originalFlavors, 'RainbowSherbert'))
 
 
 
@@ -111,12 +108,11 @@ Use the removeLastFlavor function below to do the following:
 
 
 function removeLastFlavor(arr1){
-  arr1 = originalFlavors;
   arr1.pop();
   return arr1; 
 }
 
-//console.log(removeLastFlavor())
+console.log(removeLastFlavor(originalFlavors))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
@@ -131,11 +127,10 @@ Use the getFlavorByIndex function below to do the following:
 
 
 function getFlavorByIndex(arr, num){
-  arr = originalFlavors;
-  num = 2;
   return arr[num];
 }
 
+console.log(getFlavorByIndex, 2)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
@@ -155,18 +150,18 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(arr, flavor){
-  arr = originalFlavors;
-  flavor = 'Rocky Road'
   arr.splice(arr.indexOf(flavor), 1)
   return arr;
 }
 
-//console.log(removeFlavorByName())
+console.log(removeFlavorByName(originalFlavors))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
-Your task is to write a function that checks every item in the array for a string and returns a new array called filteredArray with only the values that contain the received string. This would allow you to be able to filter for "Vanilla", "Sherbet", "Lemon" etc. when different holidays roll around by passing in those specific strings.
+Your task is to write a function that checks every item in the array for a string and returns a new array called filteredArray with only 
+the values that contain the received string. This would allow you to be able to filter for "Vanilla", "Sherbet", "Lemon" etc. when 
+different holidays roll around by passing in those specific strings.
 
 Use the filterByWord function below to do the following:
   1. Receive an array in the first parameter that will take the flavors array as an argument
@@ -175,7 +170,8 @@ Use the filterByWord function below to do the following:
   4. If they do, add them to a new array
   5. Return the new array that contains the filtered flavors
 
-  For example: filterByWord(originalFlavors, "Chocolate") should return ["Chocolate", "Chocolate Almond", "Chocolate Chip", "Chocolate Fudge", "Chocolate Mint", "Chocolate Ribbon"]
+  For example: filterByWord(originalFlavors, "Chocolate") should return ["Chocolate", "Chocolate Almond", "Chocolate Chip", 
+  "Chocolate Fudge", "Chocolate Mint", "Chocolate Ribbon"]
 
   HINT - you can use the .includes method to help you solve this
 
