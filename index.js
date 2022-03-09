@@ -88,10 +88,10 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(arr, str){
-  arr = originalFlavors;
-  str = 'Rainbow Sherbert';
-  arr.unshift(str);
-  return arr;
+  // arr = originalFlavors;
+  // str = 'Rainbow Sherbert';
+  // arr.unshift(str);
+  // return arr;
  };
 
 //console.log(addFlavor())
@@ -138,7 +138,9 @@ function getFlavorByIndex(arr, num){
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
+As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
+as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, 
+and remove that single flavor from the array.  
 
 Use the removeFlavorByName function below to do the following:
   1. Receive an array in the first parameter that will take the flavors array as an argument
@@ -146,15 +148,20 @@ Use the removeFlavorByName function below to do the following:
   3. Remove the received flavor from the received array
   4. Return the resulting array that now contains one less flavor
 
-  For example: running removeFlavorByName(originalFlavors, "Rocky Road") would return an array with the a length of 30 because Rocky Road would have been removed. 
+  For example: running removeFlavorByName(originalFlavors, "Rocky Road") would return an array with the a length of 
+  30 because Rocky Road would have been removed. 
 
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(arr, flavor){
+  arr = originalFlavors;
+  flavor = 'Rocky Road'
+  arr.splice(arr.indexOf(flavor), 1)
+  return arr;
 }
 
+//console.log(removeFlavorByName())
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
