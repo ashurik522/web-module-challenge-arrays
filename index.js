@@ -50,7 +50,7 @@ function copy(newArr){
   newArr = originalFlavors
   return newArr
 }
-console.log(copy())
+//console.log(copy())
 
 
 
@@ -70,7 +70,7 @@ function is31Flavors(count){
   if (count === 31);
   return true;
  }
- console.log(is31Flavors())
+ //console.log(is31Flavors())
 
 
 
@@ -110,11 +110,13 @@ Use the removeLastFlavor function below to do the following:
 */
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(arr1){
+  arr1 = originalFlavors;
+  arr1.pop();
+  return arr1; 
 }
 
-
+//console.log(removeLastFlavor())
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
