@@ -47,7 +47,7 @@ Use the copy function below to do the following:
 
 
 function copy(newArr){
-  return newArr
+  return [...newArr]
 }
 console.log(copy(originalFlavors))
 
@@ -179,10 +179,16 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(arr, filter){
+  let newArray =[];
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i].includes(filter)){
+      newArray.push(arr[i])
+    }
+  }
+  return newArray
 }
-
+ console.log(filterByWord(originalFlavors, 'Chocolate'))
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
