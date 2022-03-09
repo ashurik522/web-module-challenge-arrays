@@ -65,11 +65,11 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(count){
-  count = originalFlavors.length;
+  count.length
   if (count === 31);
   return true;
  }
- console.log(is31Flavors())
+ console.log(is31Flavors(originalFlavors))
 
 
 
